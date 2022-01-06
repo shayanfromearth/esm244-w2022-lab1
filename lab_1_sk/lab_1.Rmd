@@ -1,0 +1,14 @@
+---
+title: "Lab 1"
+author: "Shayan Kaveh"
+date: "1/5/2022"
+output: html_document
+---
+
+```{r setup, include=TRUE, warning = FALSE, message = FALSE}
+# can delete include=TRUE because it's the default
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+```
+
+
