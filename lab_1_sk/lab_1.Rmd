@@ -77,5 +77,19 @@ ggplot(data = blackwood_acacia_df, aes(x = lon, y = lat)) +
   geom_point(color = "darkgreen")
 ```
 
+**Example 4:** use `tidyr::separate()`
+
+```{r}
+sf_trees_sep <- sf_trees %>% 
+  separate(species, into = c('spp_scientific', 'spp_common'), sep = ' :: ')
+```
+
+**Example 5:** use `tidyr::unite()`
+
+```{r}
+ex_5 <- sf_trees %>% 
+  unite("id_status", tree_id, legal_status, sep = "_COOL_")
+```
+
 
 
